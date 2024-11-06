@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-[#EFF3C0] flex items-center justify-center min-h-screen">
+  <bds />
+  <div class="bg-white shadow-lg rounded-[40px] max-w-xs w-[85%] text-center">
+    <div class="relative">
+      <div class="h-24 bg-cover bg-center rounded-t-[40px]"
+        style="background-image: url('https://t3.ftcdn.net/jpg/06/50/37/54/360_F_650375461_mK9u9N3Gub5TUCJR8bAdefZSypuYjD8X.jpg');">
+      </div>
+      <img class="w-24 h-24 rounded-full border-4 border-white mx-auto -mt-12 shadow-lg"
+        src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg"
+        alt="Profile Image">
+    </div>
+
+
+    <div class="p-6 space-y-4 pt-2">
+      <h2 class="text-xl font-semibold text-gray-800">Vincent van Gogh</h2>
+      <span class="text-gray-500 text-xs">@vincentvangogh</span>
+      <div class="flex justify-center space-x-4 mt-4 text-gray-500">
+        <a href="#" class="hover:text-blue-600"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-blue-500"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-gray-700"><i class="fab fa-github"></i></a>
+      </div>
+
+      <p class="text-black text-xs">
+        Passionate artist and visionary, capturing the beauty of the world through unique perspectives and vivid colors.
+      </p>
+
+
+
+
+
+      <div class="flex justify-center space-x-4 pt-4">
+        <button
+          class="transition duration-300 ease-in-out flex-1 border border-sky-500 hover:bg-sky-500 hover:text-white py-2 px-4 rounded-full">
+          Follow
+        </button>
+        <button
+          class="transition duration-300 ease-in-out flex-1 hover:bg-gray-500 border border-gray-500 hover:text-white font-medium py-2 px-4 rounded-full">
+          Message
+        </button>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
