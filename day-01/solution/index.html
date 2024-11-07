@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .header {
+            position: relative;
+            background: linear-gradient(to right, #A52A2A, #EC4899);
+            height: 8rem;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            overflow: hidden;
+        }
+
+        .cloud {
+            position: absolute;
+            bottom: -1rem;
+            left: 0;
+            right: 0;
+            height: 4rem;
+            background: inherit;
+            border-radius: 50%;
+            z-index: -1;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .avatar {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body class="flex items-center justify-center h-screen bg-yellow-100">
+
+    <div class="bg-white shadow-lg rounded-3xl w-80 overflow-hidden">
+        <!--header-->
+        <div class="header">
+            <div class="cloud"></div>
+            <img class="avatar"
+                src="https://scontent.fsgn6-1.fna.fbcdn.net/v/t1.6435-9/152457570_1234352220314011_6611674277685554360_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=F9Ne4XGps5IQ7kNvgH_K7NQ&_nc_zt=23&_nc_ht=scontent.fsgn6-1.fna&_nc_gid=Anjpol8vdJGdO9cPLRs6a5J&oh=00_AYA_3rAZjk6L5f0_1AOBw7R5e6FY74G2NumjwNUnCp8IrA&oe=67500F69"
+                alt="Profile Picture">
+        </div>
+
+        <!--profile info-->
+        <div class="text-center mt p-6">
+            <h2 class="text-xl font-semibold text-gray-800">Le Duy Khoi</h2>
+            <p class="text-sm text-gray-500">@baekhoi</p>
+
+            <!-- social link -->
+            <div class="flex justify-center space-x-4 mt-4 text-gray-500">
+                <a href="#" class="hover:text-blue-600"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-black"><i class="fab fa-github"></i></a>
+                <a href="#" class="hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-black"><i class="fab fa-tiktok"></i></a>
+            </div>
+
+            <!-- description -->
+            <p class="text-gray-700 mt-4 text-sm">
+                100 days of code challenge to level up as a Frontend Developer.
+            </p>
+
+            <!-- action button -->
+            <div class="flex justify-center space-x-4 mt-11">
+                <button
+                    class="bg-pink-500 text-white rounded-full font-semibold text-sm px-10 py-2 hover:bg-pink-600">Follow</button>
+                <button
+                    class="border border-gray-300 text-gray-500 px-8 py-2 rounded-full text-sm hover:bg-gray-200 font-semibold">Message</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
