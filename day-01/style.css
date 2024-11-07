@@ -1,0 +1,169 @@
+:root {
+    --font-family-roboto-flex: "Roboto Flex", sans-serif;
+    --color-primary: #DF3F8C;
+    --color-primary-dark: #973150;
+    --color-white: #fff;
+    --color-gray: #838383;
+    --color-yellow: #EFF3BF;
+}
+body {
+    display: grid;
+    place-items: center;
+    padding: 1.5rem;
+    background-color: var(--color-yellow);
+
+    font-family: var(--font-family-roboto-flex);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+}
+
+.container {
+    width: 100%;
+}
+
+.button-like-link {
+    display: inline-block;
+    padding: 16px;
+    border: 1px solid var(--color-gray);
+    border-radius: 999px;
+    font-size: 20px;
+    color: var(--color-gray);
+    text-align: center;
+}
+
+.primary-button {
+    background-color: var(--color-primary);
+    border: none;
+    color: var(--color-white);
+}
+
+.profile-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 510px;
+    padding: 0 48px 44px;
+    background-color: var(--color-white);
+    border-radius: 64px;
+    overflow: hidden;
+}
+
+.profile-card__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 280px;
+}
+
+.profile-card__bg-color {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    background: var(--color-primary-dark);
+    z-index: 1;
+}
+
+.profile-card__bg-pattern {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom;
+   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="404" height="162" viewBox="0 0 500 192" fill="none"><rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none"/><mask id="mask0_24_2" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="0" width="510" height="182"><path d="M134.398 190C60.7127 190 19.5925 151 4 131.5V0L514 23.5V133.5C514 156.5 484.443 190 434.106 190C371.183 190 353.797 131.5 302.88 131.5C261.07 131.5 208.083 190 134.398 190Z" fill="%23973150" id="svg_1"/></mask><defs><linearGradient id="paint0_linear_24_2" x1="0.4999989867210388" y1="0.01923069916665554" x2="0.4999989867210388" y2="1"><stop stop-color="%23BC5473"/><stop offset="0.746259" stop-color="%23BC5473" stop-opacity="0"/></linearGradient></defs><g class="currentLayer" style=""><title>Layer 1</title><path d="M383.602 190C457.287 190 498.407 151 514 131.5V50L3.99997 73.5V133.5C3.99997 156.5 33.5568 190 83.8945 190C146.817 190 164.203 131.5 215.12 131.5C256.93 131.5 309.917 190 383.602 190Z" fill="%23CD5378" id="svg_2" class=""/><path d="M382.7772083978883,191.57528161750167 C456.9282797272154,191.57528161750167 498.30837137493114,152.32859936407482 514,132.7052582373614 V20.5 L0.7741249577394007,44.14864187065464 V134.717908609332 C0.7741249577394007,157.863387886994 30.517907404625415,191.57528161750167 81.17400271919784,191.57528161750167 C144.49449923435813,191.57528161750167 161.99046891789862,132.7052582373614 213.22952841271237,132.7052582373614 C255.30398443875794,132.7052582373614 308.6261370685612,191.57528161750167 382.7772083978883,191.57528161750167 z" fill="%23DF3F8C" id="svg_3" class=""/><path d="M131.69681203706844,190.80645161867142 C57.48717906357251,190.80645161867142 16.074374205659915,151.5289337695707 0.3709204348367622,131.89017484502034 V22.618105957137573 L514,46.28532825082647 V133.9044065295896 C514,157.06807090213618 484.232677049593,190.80645161867142 433.5374868965115,190.80645161867142 C370.16673675243544,190.80645161867142 352.6570207184748,131.89017484502034 301.3777033768681,131.89017484502034 C259.27019001094754,131.89017484502034 205.90614287581167,190.80645161867142 131.69681203706844,190.80645161867142 z" fill="%23973150" id="svg_4" class=""/><path d="M134.398 190C60.7127 190 19.5925 151 4 131.5V50L514 73.5V133.5C514 156.5 484.443 190 434.106 190C371.183 190 353.797 131.5 302.88 131.5C261.07 131.5 208.083 190 134.398 190Z" fill="%23973150" id="svg_5" class=""/><g mask="url(%23mask0_24_2)" id="svg_6" class=""><path d="M92.0089,189.22580647468567 C65.218,192.86980647468567 7.60145,194.72580647468567 -2.10914,189.22580647468567 L-29,208.72580647468567 L19.1795,225.72580647468567 L76.3225,268.22580647468567 L297.612,184.22580647468567 L478.565,234.22580647468567 V193.72580647468567 C408.537,193.72580647468567 390.283,112.22580647468567 315.486,112.22580647468567 C245.931,112.22580647468567 209.656,173.22580647468567 92.0089,189.22580647468567 z" fill="url(%23paint0_linear_24_2)" id="svg_7"/></g></g></svg>');
+}
+
+.profile-card__header {
+    padding-block: 23px 97.5px;
+    z-index: 1;
+}
+
+.profile-card__avatar {
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25);
+}
+
+.profile-card__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 75px;
+}
+
+.profile-card__full-name {
+    margin-bottom:20px;
+    text-align: center;
+    font: bold;
+}
+
+.profile-card__username {
+    font-size: 16px;
+    line-height: 1em;
+    letter-spacing: 0;
+    opacity: 0.6;
+}
+
+ul.profile-card__social {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 294px;
+    list-style-type: none;
+    margin-block: 40px;
+    font-size: 26px;
+}
+
+ul.profile-card__social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+}
+
+.profile-card__social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.profile-card__social i {
+    color: black;
+}
+
+.profile-card__bio {
+    text-align: center;
+}
+
+.profile-card__footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    max-width: 414px;
+}
+
+.profile-card__footer > a {
+    width: 100%;
+    max-width: 191px;
+}
+a:hover {
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+}
