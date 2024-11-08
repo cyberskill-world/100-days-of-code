@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Background style */
+        body {
+            background-image: url("https://media.istockphoto.com/id/1807252825/vi/vec-to/b%E1%BA%A3n-%C4%91%E1%BB%93-theo-d%C3%B5i-gps-b%E1%BA%A3ng-%C4%91i%E1%BB%81u-khi%E1%BB%83n-theo-d%C3%B5i-v%E1%BB%8B-tr%C3%AD-isometric-tr%E1%BB%ABu-t%C6%B0%E1%BB%A3ng-theo-d%C3%B5i-c%C3%A1c-ch%E1%BB%91t.jpg?s=1024x1024&w=is&k=20&c=hgxB_51IqvYZgIXUMvMYayC-fhdLFl1w6O1AbpoFxkQ="), linear-gradient(to bottom right, #6b46c1, #3b82f6);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center">
+    <div class="container mx-auto p-6 flex flex-col md:flex-row items-center md:justify-between space-y-8 md:space-y-0">
+        <!-- Left Section -->
+        <div class="text-white max-w-lg space-y-4 mt-[60px]">
+            <h1 class="text-4xl font-semibold">Contact Us</h1>
+            <p>Get in touch with us! Whether you have questions, feedback, or just want to say hello, we're here for
+                you.</p>
+            <div class="bg-pink-500 p-4 rounded-lg inline-block">
+                <p class="font-semibold">Windler, Lockman and McClure</p>
+                <p>3629 N Cole Rd, Boise, Illinois</p>
+            </div>
+        </div>
+
+        <!-- Right Section (Form) -->
+        <div class="bg-white p-8 rounded-lg w-full max-w-md">
+            <h2 class="text-xl font-semibold mb-4">Send us a Message</h2>
+            <form action="#" class="space-y-8">
+                <input type="text" placeholder="Name"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+                <input type="email" placeholder="Email"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+                <input type="tel" placeholder="Phone"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+                <div>
+                    <p class="text-gray-700">Preferred contact method of communication</p>
+                    <div class="flex items-center space-x-4">
+                        <label class="flex items-center">
+                            <input type="radio" name="contact_method" value="email"
+                                class="text-pink-500 focus:ring-pink-500">
+                            <span class="ml-2">Email</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="contact_method" value="phone"
+                                class="text-pink-500 focus:ring-pink-500" checked>
+                            <span class="ml-2">Phone</span>
+                        </label>
+                    </div>
+                </div>
+                <textarea placeholder="Message" rows="4"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
+                <button type="submit"
+                    class="w-full py-2 bg-pink-500 text-white font-semibold rounded-full hover:bg-pink-600 mt-20 ">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
