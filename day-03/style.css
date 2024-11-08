@@ -1,0 +1,16 @@
+/* Đảm bảo rằng mỗi mục menu sử dụng flexbox */
+.menu a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+  }
+  
+  /* Thêm margin auto vào mũi tên để đẩy nó sang bên phải */
+  .menu a svg:last-child {
+    margin-left: auto;
+  }
+
+  span {
+    width: 100%;
+  }
